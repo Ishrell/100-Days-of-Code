@@ -1,0 +1,5 @@
+print("Hello Welcome to the Band Name Generator")
+print("Your band Name is " + input("What City are you from\n") + " " + input("What is your pets name?\n"))
+#Band Name Generator is one line lmaooo!
+#input has higher priority than the print function. 
+#The interepreter as it reads through the printt function checks and if the input function is found, it is executed first and the input string is printed after all input functions have been adressed.
