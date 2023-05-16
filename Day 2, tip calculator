@@ -5,5 +5,4 @@ percent = (tip+100)/100
 
 payment = float((Bill/people)*percent)
 print("Your total payment for each person is:")
-print(round(payment,2))
-
+print("{:.2f}".format(payment))
