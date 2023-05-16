@@ -1,1 +1,9 @@
+Bill = float(input("Enter Bill Amount: \n"))
+people = float(input("Enter Number of people: \n"))
+tip = float(input("Enter tip percentage: \n"))
+percent = (tip+100)/100
+
+payment = float((Bill/people)*percent)
+print("Your total payment for each person is:")
+print(round(payment,2))
 
