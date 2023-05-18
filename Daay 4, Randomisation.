@@ -1,0 +1,125 @@
+# 🚨 Don't change the code below 👇
+row1 = ["⬜️","️⬜️","️⬜️"]
+row2 = ["⬜️","⬜️","️⬜️"]
+row3 = ["⬜️️","⬜️️","⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this row 👇
+column = int(int(position)/10)
+row = int(position)%10
+
+map[row-1][column-1] = 'x'
+
+#Write your code above this row 👆
+
+# 🚨 Don't change the code below 👇
+print(f"{row1}\n{row2}\n{row3}")
+
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+ 
+dirty_dozen = [fruits, vegetables]
+ 
+print(dirty_dozen[0][3])
+
+Guess where the treasure iss..
+# 🚨 Don't change the code below 👇
+import random
+row1 = ["⬜️","️⬜️","️⬜️"]
+row2 = ["⬜️","⬜️","️⬜️"]
+row3 = ["⬜️️","⬜️️","⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do think the treasure is? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this row 👇
+columnq = int(int(position)/10)
+rowq = int(position)%10
+
+column = random.randint(0,3)
+row = random.randint(0,3)
+
+map[row-1][column-1] = 'x'
+#Write your code above this row 👆
+if columnq == column:
+    if rowq == row:
+        print(f"{row1}\n{row2}\n{row3}")
+    else:
+        print("Close.. Wrong Row.")
+else: 
+  print("Wrong Column/Row. Better Luck Next Time")
+# 🚨 Don't change the code below 👇
+
+
+ROCK paper Scissors game..
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+
+inp = input("Welcome to the game of Rock, Paper and Scissors. Type your desired throw..\n")
+user = inp.lower()
+count = 0
+if user == 'rock':
+  count = 0
+elif user == 'paper':
+  count = 1
+elif user == 'scissors':
+  count = 2
+
+moves = [rock, paper, scissors]
+r = random.randint(0,2)
+print("The Computer Throws:\n")
+print(moves[r] + "\n")
+if count == 0:
+  print("user throw:\n" + rock + "\n")
+elif count == 1:
+  print("user throw:\n" + paper + "\n")
+elif count == 2:
+  print("user throw:\n" + scissors + "\n")
+
+
+
+if r != count:
+    if r == 2:
+      if count == 0:
+        print("You win!!\n")
+      else:
+        print("You Lose.\n")
+    else:
+      if count > r:
+          print("You win!!\n")
+      else:
+          print("You Lose.\n")
+else:
+  print("Draw\n")
+
